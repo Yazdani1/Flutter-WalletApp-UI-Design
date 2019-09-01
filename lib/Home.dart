@@ -328,7 +328,78 @@ class _HomeState extends State<Home> {
 
           ),
           // Third Container end
+          
+          new SizedBox(height: 10.0,),
+          
+          new Container(
+            margin: EdgeInsets.only(left:20.0,right: 20.0),
+            child: new Row(
+              children: <Widget>[
+                
+                new Expanded(
+                  flex: 1,
+                  child: new Container(
+                    height: 100.0,
+                    color: Color(0xFF2E304F),
+                    child: new Align(
+                      alignment: Alignment.center,
+                      child: new Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
 
+                          new Icon(Icons.send,color: Colors.white,size: 22.0,),
+                          new SizedBox(height: 10.0,),
+
+                          new Text("Send Money",
+                          style: TextStyle(
+                            fontSize: 19.0,
+                            color: Colors.white
+                          ),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                new SizedBox(width: 15.0,),
+
+                new Expanded(
+                  flex: 1,
+                  child: new Container(
+                    height: 100.0,
+                    color: Color(0xFF242844),
+
+                    child: new Align(
+                      alignment: Alignment.center,
+                      child: new Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+
+                          new Icon(Icons.call_received,color: Colors.white,size: 22.0,),
+                          new SizedBox(height: 10.0,),
+
+                          new Text("Get Money",
+                            style: TextStyle(
+                                fontSize: 19.0,
+                                color: Colors.white
+                            ),
+                          )
+
+                        ],
+                      ),
+                    ),
+
+                  ),
+                ),
+                
+                
+              ],
+            ),
+          )
+          
           
 
 
