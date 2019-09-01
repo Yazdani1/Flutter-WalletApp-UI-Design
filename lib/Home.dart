@@ -187,6 +187,73 @@ class _HomeState extends State<Home> {
                         ),
                       ),
 
+                      //end First Item
+                      new SizedBox(height: 15.0,),
+                      new Container(
+                        height: 90.0,
+                        color: Color(0xFF272B4A),
+                        width: MediaQuery.of(context).size.width,
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+
+                            new Expanded(
+                                flex: 1,
+                                child: new Icon(Icons.search,color: Colors.white,)
+                            ),
+                            new Expanded(
+                              flex: 2,
+                              child: new Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+
+                                  new Text("Bitcoin",
+                                    style: TextStyle(
+                                        fontSize: 21.0,
+                                        color: Colors.white
+                                    ),
+                                  ),
+                                  new SizedBox(height: 5.0,),
+                                  new Text("\$405",
+                                    style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.grey.withOpacity(0.8)
+                                    ),
+                                  )
+
+                                ],
+                              ),
+                            ),
+                            new Expanded(
+                              flex: 2,
+                              child: new Row(
+                                children: <Widget>[
+
+                                  new Text("\$354",
+                                    style: TextStyle(
+                                        fontSize: 21.0,
+                                        color: Colors.white
+                                    ),
+                                  ),
+                                  new SizedBox(width: 5.0,),
+                                  new Text("\$89",
+                                    style: TextStyle(fontSize: 16.0,
+                                        color: Colors.grey.withOpacity(0.9)
+                                    ),
+                                  )
+
+                                ],
+                              ),
+                            )
+
+                          ],
+                        ),
+                      ),
+                      //end second item
+
+
+
                     ],
                   ),
                 )
