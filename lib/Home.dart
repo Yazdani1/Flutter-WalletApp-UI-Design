@@ -369,7 +369,6 @@ class _HomeState extends State<Home> {
                   child: new Container(
                     height: 100.0,
                     color: Color(0xFF242844),
-
                     child: new Align(
                       alignment: Alignment.center,
                       child: new Column(
